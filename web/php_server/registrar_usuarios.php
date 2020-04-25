@@ -19,6 +19,8 @@ $edad = $_POST['edad'];
 $sexo = $_POST['sexo'];
 $nacimiento = $_POST['nacimiento'];
 
+//test1
+
 include("../php_server/db_connect.php");
 
 $query = "SELECT username FROM usuarios WHERE username = '$name'";
@@ -36,10 +38,10 @@ echo 'Usuario registrado! ';
 else error();
 
 
-//test
+//test2
 
+//test3
 
-
-
+//test4
 
 ?>
