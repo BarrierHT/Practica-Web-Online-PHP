@@ -1,0 +1,32 @@
+#cuerpo form{
+    background-color:lightblue;
+    border:#000 2px solid;
+    margin:4%;
+    width: 40%;
+    overflow: auto;
+    padding: 3%;
+}
+#cuerpo input,#cuerpo select{
+    display: block;
+    padding: 5px;
+
+}
+#cuerpo label{
+    font-family: Verdana,Arial;
+    font-size: 21px;
+    font-weight: bold;
+    display: block;
+}
+.error{
+    background: red;
+    color:#fff;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin:5px;	
+    overflow: auto;
+}
+
+label{
+    overflow: auto;
+}

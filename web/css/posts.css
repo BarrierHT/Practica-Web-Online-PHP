@@ -1,0 +1,152 @@
+
+/*SLIDER*/
+
+#slider{
+	margin-top:10px;
+	width: 100%;
+	height: 300px;				
+	position: relative;
+	overflow: auto;
+}
+#slider img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#left,#right,.selector{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: rgba(255,255,255,.8);
+	border-radius: 20px;
+}
+#left,#right{
+	top:45%;
+}
+#right{
+	left:97.45%;
+}
+#slider .selector{
+	background: #ccc;
+	top:87%;
+	position: relative;
+	display: inline-block;
+	left:41%;								/* 	Modificar el left del slider	*/
+}
+
+/*SECCION POST*/
+
+#cuerpo{
+	height: auto;
+}
+section#post{
+		float: left;
+		width: 65%;
+		height: auto;
+		display: block;
+}
+#post .articulo{
+	/*border:2px #000 solid;*/
+	margin-top: 20px;
+	padding: 15px;
+	overflow: auto;
+	margin-bottom: 20px;
+	border:2px solid rgba(0, 0, 0, .3);
+	border-bottom-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+.caja_comentarios{
+	background: lightgreen;
+	padding: 5px;
+	height: auto;
+	color:white;
+	width: auto;
+	float: right;
+}
+#post a{
+	color:rgba(0,0,0,.8);
+	font-size: 18px;
+	font-family: Verdana,Arial;
+}
+#post span{
+	font-weight: bold;
+	color:#000;
+	font-family: Verdana,Arial;
+	font-size: 34px;
+}
+#post time{
+	color:#ccc;
+	font-family: Verdana,Arial;
+	font-size: 19px;
+}
+#post p{
+		font-size: 19px;
+}
+#post .leer{
+	background: orange;
+	padding: 7px;
+}
+#post #text_post{
+	resize:none;
+}
+#post #public{
+	cursor: pointer;
+	padding:15px;
+	font-size: 20px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	background-color:lightgreen;
+}
+#post #title_post{
+	margin: 0 5px 5px 0;
+	border-top-right-radius: 10%;
+	border-bottom-right-radius: 10%;
+	padding:10px;
+	font-size: 17px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*ASIDE(SIDEBAR)*/
+
+#sidebar{	
+	display: inline-block;
+	width: 33.5%;
+	margin-top: 20px;
+	height: auto;
+	margin-left: 15px;
+	box-sizing: border-box;
+	/*border: 2px #000 solid;*/
+}
+#sidebar span{
+	font-weight: bold;
+	font-size: 23px;
+	display: block;
+	font-family: Verdana,Arial;
+	text-align: center;
+	margin:10px;
+}
+#sidebar img{
+	width: 96%;
+	height: auto;
+	margin-left: 15px;
+}
+#sidebar blockquote{
+	font-size: 17px;
+	padding: 15px;
+	width: 80%;
+}
+
+/*FORMULARIO*/
+
+
+
+@media screen and (max-width:770px) {
+
+#sidebar form{
+    width: 200%;
+    margin-bottom: 10%;
+}
+#sidebar blockquote{
+    width: 120%;
+	}
+}

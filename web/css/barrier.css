@@ -1,0 +1,26 @@
+.informacion{
+    background:rgba(255,255,255,.9);
+    width:35%;
+    padding:10px;
+    margin:2.5% 0;
+     border:orange 2px solid;
+     border-radius:20px;
+     cursor:pointer;
+     overflow:auto;
+}
+#texto1,#texto2,#texto3{
+    width:85%;
+    height:auto;
+    background:orange;												/*ACORDEON*/
+    border:solid 2px yellow;
+    margin-top:-1%;
+    border-radius:15px;
+    padding:1.8%;
+    overflow:auto;
+}
+#texto1 span,#texto2 span,#texto3 span{
+    font-size:15px;
+    overflow:auto;
+    font-weight:bold;
+    font-family:Verdana,Arial;
+}

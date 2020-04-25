@@ -1,0 +1,42 @@
+CREATE TABLE usuarios(
+id INT(255) AUTO_INCREMENT,
+username VARCHAR(255) NOT NULL,
+password VARCHAR(255) NOT NULL,
+edad INT (255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+sexo VARCHAR(100) NOT NULL,
+nacimiento DATE,
+CONSTRAINT pk_id PRIMARY KEY (id),
+CONSTRAINT uq_name UNIQUE(username)
+)ENGINE = INNODB;
+
+CREATE TABLE usuarios_online(
+id INT(255) NOT NULL,
+username VARCHAR(255) NOT NULL,
+time VARCHAR(255) NOT NULL
+)ENGINE = INNODB;
+
+CREATE TABLE posts(
+id INT(255)  AUTO_INCREMENT, 
+id_usuario INT(255) NOT NULL,
+fecha DATE NOT NULL,
+titulo VARCHAR (255) NOT NULL,
+time INT(255),
+text TEXT NOT NULL,
+CONSTRAINT pk_id PRIMARY KEY(id),
+CONSTRAINT fk_id_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+)ENGINE = INNODB;
+
+CREATE TABLE friends(
+id_user1 INT(255),
+id_user2 INT(255),
+CONSTRAINT fk_id_user1 FOREIGN KEY(id_user1) REFERENCES usuarios(id),
+CONSTRAINT fk_id_user2 FOREIGN KEY(id_user2) REFERENCES usuarios(id)
+)ENGINE = INNODB; 
+
+
+CREATE TABLE notifications(
+id_user1 INT(255),
+id_user2 INT(255),
+type VARCHAR(255)
+)ENGINE = INNODB;
