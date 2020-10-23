@@ -12,12 +12,12 @@ $decision = true;
 
 if( isset($_POST['name']) && isset($_POST['password']) &&  isset($_POST['email'])
  && isset($_POST['edad']) && isset($_POST['sexo']) && isset($_POST['nacimiento']) ){
-$name = $_POST['name']; 
-$password = $_POST['password'];
-$email = $_POST['email'];
-$edad = $_POST['edad'];
-$sexo = $_POST['sexo'];
-$nacimiento = $_POST['nacimiento'];
+        $name = $_POST['name']; 
+        $password = $_POST['password'];
+        $email = $_POST['email'];
+        $edad = $_POST['edad'];
+        $sexo = $_POST['sexo'];
+        $nacimiento = $_POST['nacimiento'];
 
 //test1
 
